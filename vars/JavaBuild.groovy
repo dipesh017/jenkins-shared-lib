@@ -1,9 +1,7 @@
 #!/usr/bin/env groovy
 def call() {
     pipeline {
-        agent {
-            label 'worker'
-        }
+        agent any
         stages {
             stage('Git Checkout') {
             steps {
